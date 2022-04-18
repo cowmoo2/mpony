@@ -22,9 +22,9 @@ import { max, maxp, maxn, min, minn, minp } from "mpony";
 
 max([2, -7, 3.5]);          // returns { result: 3.5, label: "OK" }
 
-maxn([0, -5, 0.2]);         // returns { result: -5, label: "OK" }
+maxn([-7, -5, 0.2]);         // returns { result: -5, label: "OK" }
 
-maxp([-13, -7, -2]);        // returns { result: 0, label: "Undefined" }
+maxp([-13, 0, 2]);          // returns { result: 2, label: "OK" }
 
 min([-5, "abc", 3, 0]);     // returns { result: -5, label: "OK" }
 
