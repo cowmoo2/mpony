@@ -1,88 +1,88 @@
-interface Res {
-    result: number;
-    label: string;
-}
+// interface Res {
+//     result: number;
+//     label: string;
+// }
 
-const keys = { ok: "OK", udef: "Undefined" };
+// const keys = { ok: "OK", udef: "Undefined" };
 
 // max - get maximum number
-export const max = (items: any[]): Res => {
+export const max = (items: any[]): number => {
     items = items.filter(item => !isNaN(item)); // remove non-numeric items
 
     if (!items.length) {
-        return { result: 0, label: keys.udef }; // default to 0 for undefined cases
+        return NaN; // return undefined
     }
 
-    return { result: Math.max(...items), label: keys.ok };
+    return Math.max(...items);
 }
 
 
 // maxn - get maximum negative number
-export const maxn = (items: any[]): Res => {
+export const maxn = (items: any[]): number => {
     items = items
         .filter(item => !isNaN(item))   // remove non-numeric items
         .filter(num => num < 0);        // remove positive or zero values
 
     if (!items.length) {
-        return { result: 0, label: keys.udef };  // default to 0 for undefined cases
+        return NaN; // return undefined
     }
 
-    return { result: Math.max(...items), label: keys.ok };
+    return Math.max(...items);
 }
 
 
 // maxp - get maximum positive number
-export const maxp = (items: any[]): Res => {
+export const maxp = (items: any[]): number => {
     items = items
         .filter(item => !isNaN(item))   // remove non-numeric items
         .filter(num => num > 0);        // remove negative or zero values
 
     if (!items.length) {
-        return { result: 0, label: keys.udef };  // default to 0 for undefined cases
+        return NaN; // return undefined
     }
 
-    return { result: Math.max(...items), label: keys.ok };
+    return Math.max(...items);
 }
 
 
 
 
 // min - get minimum number
-export const min = (items: any[]): Res => {
+export const min = (items: any[]): number => {
     items = items.filter(item => !isNaN(item)); // remove non-numeric items
 
     if (!items.length) {
-        return { result: 0, label: keys.udef }; // default to 0 for undefined cases
+        return NaN; // return undefined
     }
 
-    return { result: Math.min(...items), label: keys.ok };
+    return Math.min(...items);
 }
 
 
 // minn - get minimum negative number
-export const minn = (items: any[]): Res => {
+export const minn = (items: any[]): number => {
     items = items
         .filter(item => !isNaN(item))   // remove non-numeric items
         .filter(num => num < 0);        // remove positive or zero values
 
     if (!items.length) {
-        return { result: 0, label: keys.udef };  // default to 0 for undefined cases
+        return NaN; // return undefined
     }
 
-    return { result: Math.min(...items), label: keys.ok };
+    return Math.min(...items);
 }
 
 
 // minp - get minimum positive number
-export const minp = (items: any[]): Res => {
+export const minp = (items: any[]): number => {
     items = items
         .filter(item => !isNaN(item))   // remove non-numeric items
         .filter(num => num > 0);        // remove negative or zero values
 
     if (!items.length) {
-        return { result: 0, label: keys.udef };  // default to 0 for undefined cases
+        return NaN; // return undefined
     }
 
-    return { result: Math.min(...items), label: keys.ok };
+    return Math.min(...items);
 }
 
