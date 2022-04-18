@@ -31,6 +31,21 @@ export const maxn = (items: any[]): Res => {
 }
 
 
+// maxp - get minimum positive number
+export const maxp = (items: any[]): Res => {
+    items = items
+        .filter(item => !isNaN(item))   // remove non-numeric items
+        .filter(num => num > 0);        // remove negative or zero values
+
+    if (!items.length) {
+        return { result: 0, label: keys.udef };  // default to 0 for undefined cases
+    }
+
+    return { result: Math.max(...items), label: keys.ok };
+}
+
+
+
 
 // min - get minimum number
 export const min = (items: any[]): Res => {
