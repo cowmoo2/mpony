@@ -1,23 +1,32 @@
 {
   "name": "mpony",
   "version": "1.0.0",
-  "description": "mpony - find the minimum, minimum negative, minimum positive, maximum, maximum negative or maximum positive number in an array",
+  "description": "mpony - find the minimum, minmum negative, minimum positive, maximum, maximum negative or maximum positive number in an array",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
-    "mpony", 
-    "min", 
-    "max", 
-    "minimum negative", 
-    "minimum positive", 
-    "maximum negative", 
-    "maximum positive"],
+    "mpony",
+    "min",
+    "max",
+    "minimum negative",
+    "minimum positive",
+    "maximum negative",
+    "maximum positive"
+  ],
   "author": "cow.moo",
   "license": "ISC",
   "devDependencies": {
     "typescript": "^4.6.3"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cowmoo2/mpony.git"
+  },
+  "bugs": {
+    "url": "https://github.com/cowmoo2/mpony/issues"
+  },
+  "homepage": "https://github.com/cowmoo2/mpony#readme"
 }
