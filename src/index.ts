@@ -31,7 +31,7 @@ export const maxn = (items: any[]): Res => {
 }
 
 
-// maxp - get minimum positive number
+// maxp - get maximum positive number
 export const maxp = (items: any[]): Res => {
     items = items
         .filter(item => !isNaN(item))   // remove non-numeric items
