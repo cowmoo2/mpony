@@ -32,5 +32,5 @@ minn([-3, -4, 0]);          // returns { result: -4, label: "OK" }
 
 minp([-3, -3, 2, 0]);       // returns { result: 2, label: "OK" }
 
-minp([-3, -2, -1]);         // returns { result: 2, label: "Undefined" }
+minp([-3, -2, -1]);         // returns { result: 0, label: "Undefined" }
 ```
