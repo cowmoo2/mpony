@@ -1,6 +1,6 @@
 {
   "name": "mpony",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "mpony - find the minimum, minimum negative, minimum positive, maximum, maximum negative or maximum positive number in an array",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
