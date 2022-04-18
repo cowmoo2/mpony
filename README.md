@@ -1,5 +1,5 @@
 # mpony
-* Find the minimum and maximum in an array:
+* Find the minimum or maximum number in an array:
     * Maximum
         * max: maximum
         * maxn: maximum negative
