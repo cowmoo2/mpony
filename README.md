@@ -4,7 +4,7 @@
         * max: maximum
         * maxn: maximum negative
         * maxp: maximum positive
-    * Minimu
+    * Minimum
         * min: minimum
         * minn: minimum negative
         * minp: minimum positive
@@ -26,5 +26,9 @@ maxn([0, -5, 0.2]);         // returns { result: -5, label: "OK" }
 
 maxp([-13, -7, -2]);        // returns { result: 0, label: "Undefined" }
 
-min([-5 ,"abc", 3, 0]);     // returns { result: -5, label: "OK" }
+min([-5, "abc", 3, 0]);     // returns { result: -5, label: "OK" }
+
+minn([-3, -4, 0]);          // returns { result: -4, label: "OK" }
+
+minp([-3, -3, 2, 0]);       // returns { result: 2, label: "OK" }
 ```
