@@ -8,7 +8,7 @@
         * min: minimum
         * minn: minimum negative
         * minp: minimum positive
-* If the result is undefined, return 0 with an appropriate label. 
+* If the result is undefined, mpony returns NaN
 
 ## Installation
 Using npm:
@@ -20,17 +20,17 @@ npm i mpony
 ```Typescript
 import { max, maxp, maxn, min, minn, minp } from "mpony";
 
-max([2, -7, 3.5]);          // returns { result: 3.5, label: "OK" }
+max([2, -7, 3.5]);          // returns 3.5
 
-maxn([-7, -5, 0.2]);        // returns { result: -5, label: "OK" }
+maxn([-7, -5, 0.2]);        // returns -5
 
-maxp([-13, 0, 2]);          // returns { result: 2, label: "OK" }
+maxp([0, 2, 5]);            // returns 5
 
-min([-5, "abc", 3, 0]);     // returns { result: -5, label: "OK" }
+min([-5, "abc", 3, 0]);     // returns -5
 
-minn([-3, -4, 0]);          // returns { result: -4, label: "OK" }
+minn([-3, -4, 0]);          // returns -4
 
-minp([-3, 3, 2, 0]);        // returns { result: 2, label: "OK" }
+minp([3, 2, 0]);            // returns 2
 
-minp([-3, -2, -1]);         // returns { result: 0, label: "Undefined" }
+minp([-3, -2, -1]);         // returns NaN
 ```
