@@ -5,6 +5,7 @@ interface Res {
 
 const keys = { ok: "OK", udef: "Undefined" };
 
+// get minimum number
 export const min = (items: any[]): Res => {
     items = items.filter(item => !isNaN(item)); // remove non-numeric items
 
@@ -15,6 +16,8 @@ export const min = (items: any[]): Res => {
     return { result: Math.min(...items), label: keys.ok };
 }
 
+
+// get minimum positive number
 export const minp = (items: any[]): Res => {
     items = items
         .filter(item => !isNaN(item))   // remove non-numeric items
