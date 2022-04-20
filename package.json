@@ -1,6 +1,6 @@
 {
   "name": "mpony",
-  "version": "1.0.9",
+  "version": "1.0.10",
   "description": "mpony - find the smallest or largest number in an array",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
