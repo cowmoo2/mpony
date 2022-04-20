@@ -1,11 +1,8 @@
-// interface Res {
-//     result: number;
-//     label: string;
-// }
-
-// const keys = { ok: "OK", udef: "Undefined" };
-
-// max - get maximum number
+/**
+ * max - get largest number in array
+ * @param {Array<any>} items - [1, 2, "abc", 3]
+ * @returns {number} - returns 3
+ */
 export const max = (items: any[]): number => {
     items = items.filter(item => !isNaN(item)); // remove non-numeric items
 
@@ -17,7 +14,11 @@ export const max = (items: any[]): number => {
 }
 
 
-// maxn - get maximum negative number
+/**
+ * maxn - get largest negative number in array
+ * @param {Array<any>} items - [-1, -2, 0]
+ * @returns {number} - returns -1
+ */
 export const maxn = (items: any[]): number => {
     items = items
         .filter(item => !isNaN(item))   // remove non-numeric items
@@ -31,7 +32,11 @@ export const maxn = (items: any[]): number => {
 }
 
 
-// maxp - get maximum positive number
+/**
+ * maxp - get largest positive number in array
+ * @param {Array<any>} items - [0, 2, 5]
+ * @returns {number} - returns 5
+ */
 export const maxp = (items: any[]): number => {
     items = items
         .filter(item => !isNaN(item))   // remove non-numeric items
@@ -47,7 +52,11 @@ export const maxp = (items: any[]): number => {
 
 
 
-// min - get minimum number
+/**
+ * min - get smallest number in array
+ * @param {Array<any>} items - [-5, "abc", 3, 0]
+ * @returns {number} - returns -5
+ */
 export const min = (items: any[]): number => {
     items = items.filter(item => !isNaN(item)); // remove non-numeric items
 
@@ -59,7 +68,11 @@ export const min = (items: any[]): number => {
 }
 
 
-// minn - get minimum negative number
+/**
+ * minn - get smallest negative number in array
+ * @param {Array<any>} items - [-3, -4, 0]
+ * @returns {number} - returns -4
+ */
 export const minn = (items: any[]): number => {
     items = items
         .filter(item => !isNaN(item))   // remove non-numeric items
@@ -73,7 +86,11 @@ export const minn = (items: any[]): number => {
 }
 
 
-// minp - get minimum positive number
+/**
+ * minp - get smallest positive number in array
+ * @param {Array<any>} items - [3, 2, 0]
+ * @returns {number} - returns 2
+ */
 export const minp = (items: any[]): number => {
     items = items
         .filter(item => !isNaN(item))   // remove non-numeric items
