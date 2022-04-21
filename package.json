@@ -1,7 +1,7 @@
 {
   "name": "mpony",
   "version": "1.0.10",
-  "description": "mpony - find the smallest or largest number in an array",
+  "description": "mpony - find the min, max, avg or sum of numbers in an array",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
@@ -10,6 +10,13 @@
   },
   "keywords": [
     "mpony",
+    "avg",
+    "average",
+    "average negative",
+    "average positive",
+    "sum",
+    "sum positive",
+    "sum negative",
     "min",
     "max",
     "minimum",
