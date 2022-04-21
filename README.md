@@ -1,5 +1,5 @@
 # mpony
-* Find the average, maximum, minimum or sum of numbers in an array:
+* A small library with several numeric array functions - average, maximum, minimum, sum sort:
     * Average
         * avg: average
         * avgn: average negative
