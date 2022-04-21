@@ -12,6 +12,9 @@
         * max: maximum
         * maxn: maximum negative
         * maxp: maximum positive
+    * Sort
+        * sorta: sort ascending
+        * sortd: sort descending
     * Sum
         * sum: sum
         * sump: sum positive
@@ -29,6 +32,7 @@ npm i mpony
 import {    avg, avgn, avgp, 
             max, maxn, maxp, 
             min, minn, minp, 
+            sort, sortd,
             sum, sumn, sump } from "mpony";
 
 
@@ -58,6 +62,12 @@ minn([-3, -4, 0]);          // returns -4
 minp([3, 2, 0]);            // returns 2
 
 minp([-3, -2, -1]);         // returns NaN
+
+
+// sort
+sort([2, 1, 5]);            // returns [1, 2, 5]
+
+sortd([2, 1, 5]);           // returns [5, 2, 1]
 
 
 // sum
