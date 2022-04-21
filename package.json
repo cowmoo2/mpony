@@ -14,9 +14,6 @@
     "average",
     "average negative",
     "average positive",
-    "sum",
-    "sum positive",
-    "sum negative",
     "min",
     "max",
     "minimum",
@@ -30,7 +27,11 @@
     "largest positive",
     "lowest negative",
     "smallest negative",
-    "largest negative"
+    "largest negative",
+    "sort",
+    "sum",
+    "sum positive",
+    "sum negative"
   ],
   "author": "cow.moo",
   "license": "ISC",
