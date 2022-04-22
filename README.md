@@ -65,7 +65,7 @@ minp([-3, -2, -1]);         // returns NaN
 
 
 // sort
-sorta([2, 1, 5]);            // returns [1, 2, 5]
+sorta([2, 1, 5]);           // returns [1, 2, 5]
 
 sortd([2, 1, 5]);           // returns [5, 2, 1]
 
