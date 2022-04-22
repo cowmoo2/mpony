@@ -32,7 +32,7 @@ npm i mpony
 import {    avg, avgn, avgp, 
             max, maxn, maxp, 
             min, minn, minp, 
-            sort, sortd,
+            sorta, sortd,
             sum, sumn, sump } from "mpony";
 
 
@@ -65,7 +65,7 @@ minp([-3, -2, -1]);         // returns NaN
 
 
 // sort
-sort([2, 1, 5]);            // returns [1, 2, 5]
+sorta([2, 1, 5]);            // returns [1, 2, 5]
 
 sortd([2, 1, 5]);           // returns [5, 2, 1]
 
