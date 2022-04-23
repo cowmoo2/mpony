@@ -7,7 +7,7 @@ export const rnn = (items: any[]): number[] => {
     items = items.filter(item => !isNaN(item)); // remove non-numeric items
 
     if (!items.length) {
-        return []; // return undefined
+        return []; // return empty
     }
 
     return items;
