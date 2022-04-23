@@ -4,6 +4,8 @@
         * avg: average
         * avgn: average negative
         * avgp: average positive
+    * Cleanse
+        * rnn: remove nonnumerical data
     * Minimum
         * min: minimum
         * minn: minimum negative
@@ -33,7 +35,13 @@ import {    avg, avgn, avgp,
             max, maxn, maxp, 
             min, minn, minp, 
             sorta, sortd,
+            rnn,
             sum, sumn, sump } from "mpony";
+
+
+
+// cleanse - remove nonnumerical data
+rnn(["a", {id: 2}, 5, 0]);  // returns [5, 0]
 
 
 // average
