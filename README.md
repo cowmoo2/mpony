@@ -63,7 +63,7 @@ maxp([0, -3, -7]);          // returns NaN
 
 
 //min
-min([-5, "abc", 3, 0]);     // returns -5
+min([-5, 3, 0]);            // returns -5
 
 minn([-3, -4, 0]);          // returns -4
 
