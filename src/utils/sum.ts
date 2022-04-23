@@ -3,8 +3,7 @@
  * @param {Array<number>} items - [1, 2, 3]
  * @returns {number} - returns 6
  */
- export const sum = (items: any[]): number => {
-    items = items.filter(item => !isNaN(item)); // remove non-numeric items
+ export const sum = (items: number[]): number => {
 
     if (!items.length) {
         return NaN; // return undefined
