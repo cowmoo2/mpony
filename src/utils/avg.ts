@@ -1,11 +1,9 @@
 /**
- * avg - get average of numbers in an array after cleansing
- * @param {Array<any>} items - [1, 2, "abc", 3]
+ * avg - get average of numbers in an array 
+ * @param {Array<number>} items - [1, 2, "abc", 3]
  * @returns {number} - returns 2
  */
- export const avg = (items: any[]): number => {
-    items = items.filter(item => !isNaN(item)); // remove non-numeric items
-
+ export const avg = (items: number[]): number => {
     if (!items.length) {
         return NaN; // return undefined
     }
@@ -16,14 +14,12 @@
 }
 
 /**
- * avgn - get average of negative numbers in array after cleansing
- * @param {Array<any>} items - [-2, -2, 3]
+ * avgn - get average of negative numbers in array 
+ * @param {Array<number>} items - [-2, -2, 3]
  * @returns {number} - returns -2
  */
- export const avgn = (items: any[]): number => {
-    items = items
-        .filter(item => !isNaN(item))   // remove non-numeric items
-        .filter(num => num < 0);        // remove positive or zero values
+ export const avgn = (items: number[]): number => {
+    items = items.filter(num => num < 0);   // remove positive or zero values
 
     if (!items.length) {
         return NaN; // return undefined
@@ -35,14 +31,12 @@
 }
 
 /**
- * avgp - get average of positive numbers in array after cleansing
- * @param {Array<any>} items - [-2, 2, 4]
+ * avgp - get average of positive numbers in array 
+ * @param {Array<number>} items - [-2, 2, 4]
  * @returns {number} - returns 3
  */
- export const avgp = (items: any[]): number => {
-    items = items
-        .filter(item => !isNaN(item))   // remove non-numeric items
-        .filter(num => num > 0);        // remove positive or zero values
+ export const avgp = (items: number[]): number => {
+    items = items.filter(num => num > 0);   // remove positive or zero values
 
     if (!items.length) {
         return NaN; // return undefined

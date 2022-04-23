@@ -1,6 +1,6 @@
 /**
- * sum - get sum of numbers in an array after cleansing
- * @param {Array<any>} items - [1, 2, "abc", 3]
+ * sum - get sum of numbers in an array
+ * @param {Array<number>} items - [1, 2, 3]
  * @returns {number} - returns 6
  */
  export const sum = (items: any[]): number => {
@@ -16,13 +16,12 @@
 }
 
 /**
- * sumn - get sum of all negative numbers in array after cleansing
- * @param {Array<any>} items - [-2, -2, 3]
+ * sumn - get sum of all negative numbers in array
+ * @param {Array<number>} items - [-2, -2, 3]
  * @returns {number} - returns -4
  */
- export const sumn = (items: any[]): number => {
+ export const sumn = (items: number[]): number => {
     items = items
-        .filter(item => !isNaN(item))   // remove non-numeric items
         .filter(num => num < 0);        // remove positive or zero values
 
     if (!items.length) {
@@ -35,13 +34,12 @@
 }
 
 /**
- * sump - get sum of all positive numbers in array after cleansing
- * @param {Array<any>} items - [-2, 2, 4]
+ * sump - get sum of all positive numbers in array
+ * @param {Array<number>} items - [-2, 2, 4]
  * @returns {number} - returns 6
  */
- export const sump = (items: any[]): number => {
+ export const sump = (items: number[]): number => {
     items = items
-        .filter(item => !isNaN(item))   // remove non-numeric items
         .filter(num => num > 0);        // remove positive or zero values
 
     if (!items.length) {
